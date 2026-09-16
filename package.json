@@ -1,0 +1,40 @@
+{
+  "name": "picgo-plugin-original-convert",
+  "version": "0.1.0",
+  "description": "Upload original images and WebP derivatives through the active PicGo uploader, while returning only the preferred result.",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test",
+    "lint": "node --check index.js && node --check lib/plugin.js"
+  },
+  "keywords": [
+    "picgo",
+    "piclist",
+    "picgo-plugin",
+    "picgo-gui-plugin",
+    "webp",
+    "sharp"
+  ],
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "sharp": "^0.35.4"
+  },
+  "peerDependencies": {
+    "picgo": ">=1.5.0"
+  },
+  "peerDependenciesMeta": {
+    "picgo": {
+      "optional": true
+    }
+  }
+}
